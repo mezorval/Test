@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to top left, rgb(209, 115, 115), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border-radius: 30px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+form::-webkit-scrollbar {
+    width: 4px;
+}
+
+form::-webkit-scrollbar-thumb {
+    background: rgb(209, 115, 115, 0.7);
+    width: 3px;
+    border-radius: 10px;
+}
+
+form::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-block: 25px;
+}
+
+form #com-name {
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(209, 115, 115);
+    margin-bottom: calc(100% / 6);
+    cursor: pointer;
+}
+
+form #com-name span {
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(115, 42, 54);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.form-container .input-style {
+    outline: none;
+    padding: 15px;
+    width: 75%;
+    border: none;
+    border-bottom: solid rgb(115, 42, 54, 0.75) 2px;
+}
+
+#button {
+    border: none;
+    padding: 20px;
+    width: calc(100% / 2.5);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(115, 42, 54);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 40px;
+    background-color: rgb(242, 168, 168);
+    border-radius: 50px;
+}
+
+#button:hover {
+    background-color: rgb(242, 168, 168, 0.7);
+}
+
+.links-container {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.links-container a {
+    text-decoration: underline;
+    color: rgb(209, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
